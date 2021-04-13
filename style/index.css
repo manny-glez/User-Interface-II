@@ -200,6 +200,7 @@ footer {
 /* Responsive Styles */
 
 /* Tablet */
+/* BELOW or AT 800px, apply these styles */
 @media(max-width:800px) {
     .image-box {
         display: none;
@@ -228,9 +229,23 @@ footer {
 
 
 /* Phone */
+/* BELOW or AT 500px, apply these styles */
 @media(max-width:500px) {
+    h1 {
+        font-size: 20px;
+        display: inline-block;
+        border: red 5px solid;
+        text-align: center;
+    }
     .image-box {
         display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 30px;
     }
     .text-box {
         display: flex;
@@ -240,10 +255,8 @@ footer {
     }
     header {
         display: flex;
+        flex-direction: column;
         justify-content: left;
-    }
-    h1 {
-        font-size: 20px;
     }
     header p {
         font-weight:normal;
